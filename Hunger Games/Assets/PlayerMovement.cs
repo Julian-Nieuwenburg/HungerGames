@@ -8,11 +8,15 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 4f;
     public float sprintSpeed = 14f;
     public float maxVelocityChange = 10f;
+    [Space]
+    public float jumpHeight = 5f;
 
     private Vector2 input;
     private Rigidbody rb;
 
     private bool sprinting;
+    private bool jumping;
+    private bool grounded = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +30,15 @@ public class PlayerMovement : MonoBehaviour
         input.Normalize();
 
         sprinting = Input.GetButton("Sprint");
+        jumping = Input.GetButton("Jump");
     }
 
     private void FixedUpdate()
     {
+        if (grounded)
+        {
+
+        }
         rb.AddForce(CalculateMovement(sprinting ? sprintSpeed : walkSpeed), ForceMode.VelocityChange);
     }
 

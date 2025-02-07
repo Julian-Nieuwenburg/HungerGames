@@ -338,4 +338,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 6194026327970295616}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 2178691973769738208}

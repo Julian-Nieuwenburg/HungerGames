@@ -6,10 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float walkSpeed = 4f;
+    public float sprintSpeed = 14f;
     public float maxVelocityChange = 10f;
 
     private Vector2 input;
     private Rigidbody rb;
+
+    private bool sprinting;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +24,13 @@ public class PlayerMovement : MonoBehaviour
     {
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         input.Normalize();
+
+        sprinting = Input.GetButton("Sprint");
     }
 
     private void FixedUpdate()
     {
-        rb.AddForce(CalculateMovement(walkSpeed), ForceMode.VelocityChange);
+        rb.AddForce(CalculateMovement(sprinting ? sprintSpeed : walkSpeed), ForceMode.VelocityChange);
     }
 
     Vector3 CalculateMovement(float speed)

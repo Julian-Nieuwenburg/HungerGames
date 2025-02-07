@@ -3,11 +3,11 @@ using UnityEngine;
 public class PlayerSetup : MonoBehaviour
 {
     public PlayerMovement movement;
-    public GameObject camera;
+    public GameObject playerCamera;
 
     public void IsLocalPlayer()
     {
         movement.enabled = true;
-        camera.SetActive(true);
+        playerCamera.SetActive(true);
     }
 }

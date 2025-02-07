@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 4
+  sprintSpeed: 14
   maxVelocityChange: 10
 --- !u!54 &8031622689340590519
 Rigidbody:
@@ -337,4 +338,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 6194026327970295616}
-  camera: {fileID: 2178691973769738208}
+  playerCamera: {fileID: 0}

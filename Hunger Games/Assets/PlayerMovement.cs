@@ -39,11 +39,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (jumping)
             {
-                rb.velocity = new Vector3(rb.linearVelocity.x, jumpHeight, rb.linearVelocity.y);
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpHeight, rb.linearVelocity.y);
             }
             else if (input.magnitude > 0.5f)
             {
-                (rb.AddForce(CalculateMovement(sprinting ? sprintSpeed : walkSpeed), ForceMode.VelocityChange);
+                rb.AddForce(CalculateMovement(sprinting ? sprintSpeed : walkSpeed), ForceMode.VelocityChange);
             }
         }
     }

@@ -1,4 +1,0 @@
-repository "Hunger Games@Julian_Nieuwenburg@cloud"
-  path "/"
-    br "/main"
-    co "/main"

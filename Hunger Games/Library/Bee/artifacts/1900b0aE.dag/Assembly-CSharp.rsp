@@ -426,6 +426,7 @@
 "Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/PlayerMovement.cs"
+"Assets/PlayerSetup.cs"
 "Assets/RoomManager.cs"
 -langversion:9.0
 /deterministic

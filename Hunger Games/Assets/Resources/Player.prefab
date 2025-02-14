@@ -242,6 +242,7 @@ MonoBehaviour:
   walkSpeed: 4
   sprintSpeed: 14
   maxVelocityChange: 10
+  jumpHeight: 5
 --- !u!54 &8031622689340590519
 Rigidbody:
   m_ObjectHideFlags: 0

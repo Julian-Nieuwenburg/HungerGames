@@ -164,6 +164,8 @@ GameObject:
   - component: {fileID: 5332928065117471763}
   - component: {fileID: 5906785782487722847}
   - component: {fileID: 5357840128633673157}
+  - component: {fileID: 2589568162797707856}
+  - component: {fileID: 3706467362097944741}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -459,6 +461,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectedWeapons: []
   weaponHolder: {fileID: 0}
+--- !u!114 &2589568162797707856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000370125669297245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc0045caefaf5142a977aa37f68fe56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+--- !u!114 &3706467362097944741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000370125669297245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290eead91a451364296c37997d6328ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSystem: {fileID: 2589568162797707856}
 --- !u!1001 &8838120257876978342
 PrefabInstance:
   m_ObjectHideFlags: 0

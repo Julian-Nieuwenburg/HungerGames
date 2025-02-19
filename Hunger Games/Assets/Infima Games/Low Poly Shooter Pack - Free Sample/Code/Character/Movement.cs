@@ -11,70 +11,28 @@ namespace InfimaGames.LowPolyShooterPack
         #region FIELDS SERIALIZED
 
         [Header("Audio Clips")]
-        
         [Tooltip("The audio clip that is played while walking.")]
-        [SerializeField]
-        private AudioClip audioClipWalking;
+        [SerializeField] private AudioClip audioClipWalking;
 
         [Tooltip("The audio clip that is played while running.")]
-        [SerializeField]
-        private AudioClip audioClipRunning;
+        [SerializeField] private AudioClip audioClipRunning;
 
         [Header("Speeds")]
-
-        [SerializeField]
-        private float speedWalking = 5.0f;
-
+        [SerializeField] private float speedWalking = 5.0f;
         [Tooltip("How fast the player moves while running."), SerializeField]
         private float speedRunning = 9.0f;
 
         #endregion
 
-        #region PROPERTIES
-
-        //Velocity.
-        private Vector3 Velocity
-        {
-            //Getter.
-            get => rigidBody.linearVelocity;
-            //Setter.
-            set => rigidBody.linearVelocity = value;
-        }
-
-        #endregion
-
         #region FIELDS
 
-        /// <summary>
-        /// Attached Rigidbody.
-        /// </summary>
         private Rigidbody rigidBody;
-        /// <summary>
-        /// Attached CapsuleCollider.
-        /// </summary>
         private CapsuleCollider capsule;
-        /// <summary>
-        /// Attached AudioSource.
-        /// </summary>
         private AudioSource audioSource;
-        
-        /// <summary>
-        /// True if the character is currently grounded.
-        /// </summary>
-        private bool grounded;
 
-        /// <summary>
-        /// Player Character.
-        /// </summary>
+        private bool grounded;
         private CharacterBehaviour playerCharacter;
-        /// <summary>
-        /// The player character's equipped weapon.
-        /// </summary>
         private WeaponBehaviour equippedWeapon;
-        
-        /// <summary>
-        /// Array of RaycastHits used for ground checking.
-        /// </summary>
         private readonly RaycastHit[] groundHits = new RaycastHit[8];
 
         #endregion
@@ -82,108 +40,116 @@ namespace InfimaGames.LowPolyShooterPack
         #region UNITY FUNCTIONS
 
         /// <summary>
-        /// Awake.
+        /// Awake: Ensures necessary components are assigned.
         /// </summary>
         protected override void Awake()
         {
-            //Get Player Character.
-            playerCharacter = ServiceLocator.Current.Get<IGameModeService>().GetPlayerCharacter();
-        }
+            // ✅ Assign Player Character Safely
+            playerCharacter = ServiceLocator.Current?.Get<IGameModeService>()?.GetPlayerCharacter();
 
-        /// Initializes the FpsController on start.
-        protected override  void Start()
-        {
-            //Rigidbody Setup.
+            if (playerCharacter == null)
+            {
+                Debug.LogError("❌ playerCharacter is NULL in Movement.cs! Make sure the Player has a CharacterBehaviour component.");
+                return;
+            }
+
+            // ✅ Check if Player Has Inventory
+            if (playerCharacter.GetInventory() == null)
+            {
+                Debug.LogError("❌ Inventory is NULL in Movement.cs! Make sure the Player has an Inventory component attached.");
+            }
+
+            // ✅ Assign Rigidbody
             rigidBody = GetComponent<Rigidbody>();
-            rigidBody.constraints = RigidbodyConstraints.FreezeRotation;
-            //Cache the CapsuleCollider.
-            capsule = GetComponent<CapsuleCollider>();
+            if (rigidBody == null)
+            {       
+                Debug.LogError("❌ Rigidbody is missing on Player!");
+            }
+            else
+            {
+                rigidBody.constraints = RigidbodyConstraints.FreezeRotation;
+            }
 
-            //Audio Source Setup.
-            audioSource = GetComponent<AudioSource>();
-            audioSource.clip = audioClipWalking;
-            audioSource.loop = true;
+            // ✅ Assign CapsuleCollider
+            capsule = GetComponent<CapsuleCollider>();
+            if (capsule == null)
+            {
+                Debug.LogError("❌ CapsuleCollider is missing on Player!");
+            }
+
+
         }
 
-        /// Checks if the character is on the ground.
+
+        /// <summary>
+        /// Checks if the player is grounded.
+        /// </summary>
         private void OnCollisionStay()
         {
-            //Bounds.
+            if (capsule == null) return;
+
             Bounds bounds = capsule.bounds;
-            //Extents.
             Vector3 extents = bounds.extents;
-            //Radius.
             float radius = extents.x - 0.01f;
-            
-            //Cast. This checks whether there is indeed ground, or not.
-            Physics.SphereCastNonAlloc(bounds.center, radius, Vector3.down,
-                groundHits, extents.y - radius * 0.5f, ~0, QueryTriggerInteraction.Ignore);
-            
-            //We can ignore the rest if we don't have any proper hits.
-            if (!groundHits.Any(hit => hit.collider != null && hit.collider != capsule)) 
-                return;
-            
-            //Store RaycastHits.
-            for (var i = 0; i < groundHits.Length; i++)
-                groundHits[i] = new RaycastHit();
 
-            //Set grounded. Now we know for sure that we're grounded.
-            grounded = true;
-        }
-			
-        protected override void FixedUpdate()
-        {
-            //Move.
-            MoveCharacter();
-            
-            //Unground.
-            grounded = false;
-        }
-
-        /// Moves the camera to the character, processes jumping and plays sounds every frame.
-        protected override  void Update()
-        {
-            //Get the equipped weapon!
-            equippedWeapon = playerCharacter.GetInventory().GetEquipped();
-            
-             // Handle Jumping
-            if (grounded && Input.GetKeyDown(KeyCode.Space)) {rigidBody.AddForce(Vector3.up * 5f, ForceMode.Impulse);}
-
+            // ✅ Check if Player is Touching the Ground
+            if (Physics.SphereCastNonAlloc(bounds.center, radius, Vector3.down,
+                groundHits, extents.y - radius * 0.5f, ~0, QueryTriggerInteraction.Ignore) > 0)
+            {
+                grounded = true;
+            }
         }
 
         #endregion
 
-        #region METHODS
+        #region MOVEMENT METHODS
 
+        /// <summary>
+        /// Moves the character based on input.
+        /// </summary>
         private void MoveCharacter()
         {
-            #region Calculate Movement Velocity
+            if (playerCharacter == null) return;
 
-            //Get Movement Input!
+            // ✅ Get Movement Input
             Vector2 frameInput = playerCharacter.GetInputMovement();
-            //Calculate local-space direction by using the player's input.
-            var movement = new Vector3(frameInput.x, 0.0f, frameInput.y);
-            
-            //Running speed calculation.
-            if(playerCharacter.IsRunning())
-                movement *= speedRunning;
-            else
-            {
-                //Multiply by the normal walking speed.
-                movement *= speedWalking;
-            }
+            Vector3 movement = new Vector3(frameInput.x, 0.0f, frameInput.y);
 
-            //World space velocity calculation. This allows us to add it to the rigidbody's velocity properly.
+            // ✅ Adjust Speed for Running
+            movement *= playerCharacter.IsRunning() ? speedRunning : speedWalking;
+
+            // ✅ Convert Local to World Space Movement
             movement = transform.TransformDirection(movement);
 
-            #endregion
-            
-            //Update Velocity.
-            Velocity = new Vector3(movement.x, 0.0f, movement.z);
+            // ✅ Update Rigidbody Velocity
+            if (rigidBody != null)
+            {
+                rigidBody.linearVelocity = new Vector3(movement.x, rigidBody.linearVelocity.y, movement.z);
+            }
         }
 
         /// <summary>
+        /// Handles footstep sounds based on movement.
+        /// </summary>
+        private void PlayFootstepSounds()
+        {
+            if (audioSource == null) return;
 
+            if (grounded && rigidBody.linearVelocity.sqrMagnitude > 0.1f)
+            {
+                // ✅ Select Correct Footstep Sound
+                audioSource.clip = playerCharacter.IsRunning() ? audioClipRunning : audioClipWalking;
+
+                // ✅ Play Footstep Sound if Not Already Playing
+                if (!audioSource.isPlaying)
+                    audioSource.Play();
+            }
+            else
+            {
+                // ✅ Pause Footstep Sound When Not Moving
+                audioSource.Pause();
+            }
+        }
 
         #endregion
     }

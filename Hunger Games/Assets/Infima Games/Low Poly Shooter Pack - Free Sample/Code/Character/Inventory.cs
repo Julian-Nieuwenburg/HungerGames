@@ -1,102 +1,234 @@
-﻿// Copyright 2021, Infima Games. All Rights Reserved.
-
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace InfimaGames.LowPolyShooterPack
+public class Inventory : MonoBehaviour
 {
-    public class Inventory : InventoryBehaviour
+    [Header("Inventory Settings")]
+    [Tooltip("Resets the entire inventory system to have 0 items picked up.")]
+    public bool resetInventoryOnStart = true;
+
+    [Tooltip("The number of slots for the system to generate")]
+    public int maxInventorySlots = 5;
+
+    [Tooltip("Enables the tooltip text in the UI, otherwise this will be ignored")]
+    [SerializeField] private bool useTooltip;
+
+    [Header("References")]
+    [Tooltip("The parent UI object that holds all inventory slots")]
+    public GameObject inventoryRoot;
+
+    [Tooltip("Template for creating inventory slots")]
+    public GameObject inventoryObjectTemplate;
+
+    [Tooltip("Tooltip text for selected items")]
+    [SerializeField] private Text tooltipText;
+
+    private List<GameObject> inventorySlots = new List<GameObject>();
+    private List<InventoryObject> objectsInInventory = new List<InventoryObject>();
+    private List<InventoryObject> inventoryItems = new List<InventoryObject>();
+    
+    private int currentlySelectedItem = 0;
+    private Camera playerCamera;
+    private Canvas inventoryCanvas;
+
+    void Start()
     {
-        #region FIELDS
-        
-        /// <summary>
-        /// Array of all weapons. These are gotten in the order that they are parented to this object.
-        /// </summary>
-        private WeaponBehaviour[] weapons;
-        
-        /// <summary>
-        /// Currently equipped WeaponBehaviour.
-        /// </summary>
-        private WeaponBehaviour equipped;
-        /// <summary>
-        /// Currently equipped index.
-        /// </summary>
-        private int equippedIndex = -1;
+        // ✅ Load Inventory Items from Resources
+        inventoryItems = Resources.LoadAll<InventoryObject>("InventoryItems").ToList();
 
-        #endregion
-        
-        #region METHODS
-        
-        public override void Init(int equippedAtStart = 0)
+        // ✅ Setup UI Slots
+        InitGUI();
+
+        // ✅ If resetInventoryOnStart is true, reset inventory
+        if (resetInventoryOnStart)
+            ResetInventory();
+
+        // ✅ If using tooltip, activate the tooltip text
+        if (useTooltip && tooltipText != null)
         {
-            //Cache all weapons. Beware that weapons need to be parented to the object this component is on!
-            weapons = GetComponentsInChildren<WeaponBehaviour>(true);
-            
-            //Disable all weapons. This makes it easier for us to only activate the one we need.
-            foreach (WeaponBehaviour weapon in weapons)
-                weapon.gameObject.SetActive(false);
-
-            //Equip.
-            Equip(equippedAtStart);
+            tooltipText.gameObject.SetActive(true);
         }
 
-        public override WeaponBehaviour Equip(int index)
+        // ✅ Automatically find the player's camera
+        FindPlayerCamera();
+
+        // ✅ Ensure the inventory canvas is correctly configured
+        ConfigureInventoryCanvas();
+    }
+
+    void Update()
+    {
+        // ✅ Allow scrolling to switch between inventory slots
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+            ToggleSlot(true);
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            ToggleSlot(false);
+
+        // ✅ Allow pressing Enter to use the selected item
+        if (Input.GetButtonDown("Submit"))
+            UseSelectedItem();
+    }
+
+    private void ToggleSlot(bool goUp)
+    {
+        inventorySlots[currentlySelectedItem].GetComponent<InventorySlot>().ToggleSlot(false);
+
+        currentlySelectedItem = goUp ? currentlySelectedItem + 1 : currentlySelectedItem - 1;
+        currentlySelectedItem = Mathf.Clamp(currentlySelectedItem, 0, inventorySlots.Count - 1);
+
+        inventorySlots[currentlySelectedItem].GetComponent<InventorySlot>().ToggleSlot(true);
+
+        // ✅ Update Tooltip
+        if (useTooltip && tooltipText != null)
         {
-            //If we have no weapons, we can't really equip anything.
-            if (weapons == null)
-                return equipped;
-            
-            //The index needs to be within the array's bounds.
-            if (index > weapons.Length - 1)
-                return equipped;
-
-            //No point in allowing equipping the already-equipped weapon.
-            if (equippedIndex == index)
-                return equipped;
-            
-            //Disable the currently equipped weapon, if we have one.
-            if (equipped != null)
-                equipped.gameObject.SetActive(false);
-
-            //Update index.
-            equippedIndex = index;
-            //Update equipped.
-            equipped = weapons[equippedIndex];
-            //Activate the newly-equipped weapon.
-            equipped.gameObject.SetActive(true);
-
-            //Return.
-            return equipped;
+            tooltipText.text = (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInventory.Count)
+                ? objectsInInventory[currentlySelectedItem].objectTooltip
+                : "";
         }
-        
-        #endregion
+    }
 
-        #region Getters
+    public void ToggleSlotAtID(int id)
+    {
+        inventorySlots[currentlySelectedItem].GetComponent<InventorySlot>().ToggleSlot(false);
+        currentlySelectedItem = Mathf.Clamp(id, 0, inventorySlots.Count - 1);
+        inventorySlots[currentlySelectedItem].GetComponent<InventorySlot>().ToggleSlot(true);
 
-        public override int GetLastIndex()
+        if (useTooltip && tooltipText != null)
         {
-            //Get last index with wrap around.
-            int newIndex = equippedIndex - 1;
-            if (newIndex < 0)
-                newIndex = weapons.Length - 1;
-
-            //Return.
-            return newIndex;
+            tooltipText.text = (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInventory.Count)
+                ? objectsInInventory[currentlySelectedItem].objectTooltip
+                : "";
         }
+    }
 
-        public override int GetNextIndex()
+    private void InitGUI()
+    {
+        if (inventoryRoot == null || inventoryObjectTemplate == null)
         {
-            //Get next index with wrap around.
-            int newIndex = equippedIndex + 1;
-            if (newIndex > weapons.Length - 1)
-                newIndex = 0;
-
-            //Return.
-            return newIndex;
+            Debug.LogError("❌ InventoryRoot or InventoryObjectTemplate is missing!");
+            return;
         }
 
-        public override WeaponBehaviour GetEquipped() => equipped;
-        public override int GetEquippedIndex() => equippedIndex;
+        // ✅ Ensure inventorySlots list is empty before populating
+        inventorySlots.Clear();
 
-        #endregion
+        for (int i = 0; i < maxInventorySlots; i++)
+        {
+            GameObject tempGameObject = Instantiate(inventoryObjectTemplate, inventoryRoot.transform);
+            tempGameObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
+            tempGameObject.GetComponent<InventorySlot>().slotID = i;
+            inventorySlots.Add(tempGameObject);
+        }
+
+        inventoryObjectTemplate.SetActive(false);
+    }
+
+    public void AddItemToInventory(CollectableObject obj)
+    {
+        if (objectsInInventory.Count >= inventorySlots.Count)
+            return;
+
+        if (!objectsInInventory.Any(x => x.itemLogic.name == obj.objectReference.name))
+        {
+            objectsInInventory.Add(obj.objectReference);
+            obj.objectReference.quantity = obj.quantity;
+            inventorySlots[objectsInInventory.Count - 1].GetComponent<InventorySlot>().SetItem(obj.objectReference.objectImage, obj.quantity);
+        }
+        else
+        {
+            int idx = objectsInInventory.FindIndex(x => x.itemLogic.name == obj.objectReference.name);
+            objectsInInventory[idx].quantity += obj.quantity;
+            inventorySlots[idx].GetComponent<InventorySlot>().SetItem(objectsInInventory[idx].objectImage, objectsInInventory[idx].quantity);
+        }
+    }
+
+    public void UseSelectedItem()
+    {
+        if (currentlySelectedItem >= objectsInInventory.Count || objectsInInventory.Count == 0)
+            return;
+
+        objectsInInventory[currentlySelectedItem].quantity--;
+        objectsInInventory[currentlySelectedItem].itemLogic.UseItem(transform, objectsInInventory[currentlySelectedItem]);
+        inventorySlots[currentlySelectedItem].GetComponent<InventorySlot>().SetItem(objectsInInventory[currentlySelectedItem].objectImage, objectsInInventory[currentlySelectedItem].quantity);
+
+        if (objectsInInventory[currentlySelectedItem].quantity <= 0)
+        {
+            objectsInInventory.RemoveAt(currentlySelectedItem);
+            objectsInInventory.TrimExcess();
+        }
+    }
+
+    public void UseItemAtID(int id)
+    {
+        if (id >= objectsInInventory.Count || objectsInInventory.Count == 0)
+            return;
+
+        objectsInInventory[id].quantity--;
+        objectsInInventory[id].itemLogic.UseItem(transform, objectsInInventory[id]);
+        inventorySlots[id].GetComponent<InventorySlot>().SetItem(objectsInInventory[id].objectImage, objectsInInventory[id].quantity);
+
+        if (objectsInInventory[id].quantity <= 0)
+        {
+            objectsInInventory.RemoveAt(id);
+            objectsInInventory.TrimExcess();
+        }
+    }
+
+    private void ResetInventory()
+    {
+        foreach (InventoryObject inventoryObject in inventoryItems)
+        {
+            inventoryObject.quantity = 0;
+        }
+    }
+
+    private void FindPlayerCamera()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            PlayerSetup playerSetup = player.GetComponent<PlayerSetup>();
+            if (playerSetup != null)
+            {
+                playerCamera = playerSetup.playerCamera.GetComponent<Camera>();
+                if (playerCamera != null)
+                {
+                    Debug.Log("✅ Player camera found: " + playerCamera.name);
+                }
+                else
+                {
+                    Debug.LogError("❌ Player camera not found!");
+                }
+            }
+            else
+            {
+                Debug.LogError("❌ PlayerSetup component not found on Player object!");
+            }
+        }
+        else
+        {
+            Debug.LogError("❌ Player object not found!");
+        }
+    }
+
+    private void ConfigureInventoryCanvas()
+    {
+        if (inventoryRoot == null)
+        {
+            Debug.LogError("❌ InventoryRoot is missing! Make sure it exists in the Hierarchy.");
+            return;
+        }
+
+        inventoryCanvas = inventoryRoot.GetComponent<Canvas>();
+        if (inventoryCanvas != null)
+        {
+            inventoryCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        }
+        else
+        {
+            Debug.LogError("❌ Inventory Canvas not found!");
+        }
     }
 }

@@ -32,11 +32,11 @@ m_ResolvedPackages:
   name: com.unity.2d.sprite
   displayName: 2D Sprite
   author:
-    name: 
-    email: 
-    url: 
+    name:
+    email:
+    url:
   category: 2D
-  type: 
+  type:
   description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
     like pivot, borders and Physics shape
   errors: []
@@ -55,7 +55,7 @@ m_ResolvedPackages:
   - sprite editor window
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -66,27 +66,27 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 288185b75ab4115633459407db6f453f23b39ae9
   editorCompatibility:
     compatibilityLevel: 0
@@ -102,11 +102,11 @@ m_ResolvedPackages:
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
   author:
-    name: 
-    email: 
-    url: 
+    name:
+    email:
+    url:
   category: 2D
-  type: 
+  type:
   description: 2D Tilemap Editor is a package that contains editor functionalities
     for editing Tilemaps.
   errors: []
@@ -142,7 +142,7 @@ m_ResolvedPackages:
   - Tilemap
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -153,27 +153,27 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 91020cbfae5609e17fd435cd77f08d0a6b7138fb
   editorCompatibility:
     compatibilityLevel: 0
@@ -189,10 +189,10 @@ m_ResolvedPackages:
   name: com.unity.analytics
   displayName: Analytics Library
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: asset
   description: The Unity Analytics Library contains the Analytics Event Tracker component,
     the Data Privacy plug-in, and the Standard Events API.
@@ -270,7 +270,7 @@ m_ResolvedPackages:
   - unity
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -281,27 +281,27 @@ m_ResolvedPackages:
     licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637789683740000000
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.analytics.git
     revision: 5ed31de2d0dd150fe8c907e98fc467da73b4b978
-    path: 
+    path:
   unityLifecycle:
     version: 3.8.1
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 6cc66d58ac08950316d3b86a26c92187aca1ddb0
   editorCompatibility:
     compatibilityLevel: 0
@@ -317,11 +317,11 @@ m_ResolvedPackages:
   name: com.unity.burst
   displayName: Burst
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: Burst is a compiler that translates from IL/.NET bytecode to highly
     optimized native code using LLVM.
   errors: []
@@ -479,7 +479,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -496,18 +496,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/burst.git
     revision: 6498e90e8843e51fdb3a37b709a1f1e4b86d3e57
-    path: 
+    path:
   unityLifecycle:
     version: 1.8.18
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Changed\n- Source file checksums are now included
     in pdb debugging files, so that Visual Studio can warn when source files differ
     from when the pdb was built\n- Added support for `HashCode.Combine`\n\n### Fixed\n-
@@ -526,7 +526,7 @@ m_ResolvedPackages:
     entry point finder.\n\n### Added\n- [Android] Support for 16Kb page sizes\n\n###
     Removed\n\n### Known Issues"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 7a907cf5a4591e4e25f4203e3be84f240058c34d
   editorCompatibility:
     compatibilityLevel: 0
@@ -542,11 +542,11 @@ m_ResolvedPackages:
   name: com.unity.collab-proxy
   displayName: Version Control
   author:
-    name: 
-    email: 
-    url: 
+    name:
+    email:
+    url:
   category: Editor
-  type: 
+  type:
   description: The package gives you the ability to use Unity Version Control in
     the Unity editor. To use Unity Version Control, a subscription is required. Learn
     more about how you can get started for free by visiting https://unity.com/solutions/version-control
@@ -655,7 +655,7 @@ m_ResolvedPackages:
   - uvcs
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -672,18 +672,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
     revision: b7effc6b40a40af218ae30084906471699330ac9
-    path: 
+    path:
   unityLifecycle:
     version: 2.6.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: "{\"changelog\":\"### Added\\n\\n- Added the ability to merge a branch
     or a changeset, using a new context menu actions\\n- Added file conflict & dir
     conflict context menu actions to the merge view\\n- Added diff and merge settings
@@ -716,7 +716,7 @@ m_ResolvedPackages:
     window the Local server that was present with no installation of UVCS\\n- Replaced
     hardcoded urls pointing to plasticscm.com\"}"
   assetStore:
-    productId: 
+    productId:
   fingerprint: 001b54a8988a14785c8e209d6c788bb15f9e58cf
   editorCompatibility:
     compatibilityLevel: 0
@@ -732,10 +732,10 @@ m_ResolvedPackages:
   name: com.unity.feature.development
   displayName: Engineering
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: feature
   description: "Optimize your development experience in Unity with the Dev Tools
     feature set. Enable support for multiple integrated development environments
@@ -786,7 +786,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -797,32 +797,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.2
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"quickstart":"https://docs.unity3d.com/Documentation/Manual/DeveloperToolsFeature.html"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 767aadbc6eb72681a4ca807c8fa248e0230a0cef
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.2
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.ide.rider@3.0.31
   testable: 0
   isDirectDependency: 1
@@ -833,10 +833,10 @@ m_ResolvedPackages:
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
@@ -902,7 +902,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -919,24 +919,24 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
     revision: ccd778a2275ff09f1a83bc924cfb2fb4d5b63566
-    path: 
+    path:
   unityLifecycle:
     version: 3.0.31
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"fix RIDER-104519 Rider is reporting errors in scripts
     that work fine in Unity when utilizing DOTS - when Player project, by generating
     projects for all assemblies in \"com.unity.entities\", \"com.unity.collections\"\nfix
     RIDER-111622 Unity Rider package is not compatible with Rider Dev builds"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 7921be93db40ec070fcb01ed82d1c3df1bbdddcd
   editorCompatibility:
     compatibilityLevel: 0
@@ -952,11 +952,11 @@ m_ResolvedPackages:
   name: com.unity.inputsystem
   displayName: Input System
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: A new input system which can be used as a more extensible and customizable
     alternative to Unity's classic input system in UnityEngine.Input.
   errors: []
@@ -1047,7 +1047,7 @@ m_ResolvedPackages:
   - xr
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1064,18 +1064,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
     revision: 6893aa60ba9ca26d54487167e90481283767ed1d
-    path: 
+    path:
   unityLifecycle:
     version: 1.12.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Fixed\n- Fixed an issue where the prompt to enable
     the InputSystem backends would interrupt the import of large assets.\n- Fixed
     Cut Mode for Action Maps and Actions to make renaming disabled. [ISXB-1155](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1155)\n-
@@ -1092,7 +1092,7 @@ m_ResolvedPackages:
     Fixed an issue where dropdown menu for Path in Input Actions Editor could not
     be selected from any button position. [ISXB-1309](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1309)"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: ea5ab5b33a268cd12592866b410522e9f55da7b6
   editorCompatibility:
     compatibilityLevel: 0
@@ -1108,11 +1108,11 @@ m_ResolvedPackages:
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: The multiplayer center provides a starting point to create multiplayer
     games. It will recommend specific packages and enable you to easily access integrations,
     samples and documentation.
@@ -1151,7 +1151,7 @@ m_ResolvedPackages:
   - Tools
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1162,27 +1162,27 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: f502d8ac613fa076192423e73892fbd89eb4049b
   editorCompatibility:
     compatibilityLevel: 0
@@ -1198,10 +1198,10 @@ m_ResolvedPackages:
   name: com.unity.postprocessing
   displayName: Post Processing
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: The post-processing stack (v2) comes with a collection of effects
     and image filters you can apply to your cameras to improve the visuals of your
@@ -1260,7 +1260,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1277,18 +1277,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.com/Unity-Technologies/Graphics.git
     revision: 54427d2529ad1a9e8f31c693d751c6371f914e40
-    path: 
+    path:
   unityLifecycle:
     version: 3.4.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Added\n- Added WebGPU support\n\n### Fixed\n- Fixed
     obsolete FormatUsage error\n- Fixed non-scalar logical operation error\n- Fixed
     MSVO to support platforms with limited storage texture support\n- Fixed compute
@@ -1296,7 +1296,7 @@ m_ResolvedPackages:
     gizmo is visible through geometry when Post Process Layer is enabled (IN-10318)\n-
     Fixed transparent objects rendering incorrectly when TAA is disabled (IN-31494)"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 026b2a0827a438e3079df62a60ca03d54961393d
   editorCompatibility:
     compatibilityLevel: 0
@@ -1312,11 +1312,11 @@ m_ResolvedPackages:
   name: com.unity.test-framework
   displayName: Test Framework
   author:
-    name: 
-    email: 
-    url: 
+    name:
+    email:
+    url:
   category: Unity Test Framework
-  type: 
+  type:
   description: Test framework for running Edit mode and Play mode tests in Unity.
   errors: []
   versions:
@@ -1403,7 +1403,7 @@ m_ResolvedPackages:
   - TestFramework
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1420,18 +1420,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
     revision: 9c6028f63a9b875e714b65de151b74e170152d49
-    path: 
+    path:
   unityLifecycle:
     version: 1.4.5
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"- Fixed an issue where the architecture flag would
     not be parsed for the StandaloneOSX platform.\n- Fixed an issue where the test
     results ui and progress bar would not update before a user input, such as mouse
@@ -1449,7 +1449,7 @@ m_ResolvedPackages:
     data to the editor.\n- Parent node of the test tree is now updated after all
     children finish running and have a result."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 5ac417e07314c8f6afba8109738c32b82d391e68
   editorCompatibility:
     compatibilityLevel: 0
@@ -1465,10 +1465,10 @@ m_ResolvedPackages:
   name: com.unity.timeline
   displayName: Timeline
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
@@ -1593,7 +1593,7 @@ m_ResolvedPackages:
   - tools
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1610,18 +1610,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
     revision: d6432ca638481c3d0e4c01f87f9cdbe3c4b1d529
-    path: 
+    path:
   unityLifecycle:
     version: 1.8.7
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Added\n\n- Released ronl-workflow-custom-marker.md
     Added a new workflow to the Timeline Workflows documentation:\n- Released ronl-workflow-custom-marker.md
     The `Create a custom Notes marker` workflow demonstrates how to create a custom
@@ -1634,7 +1634,7 @@ m_ResolvedPackages:
     active, moving the playhead in the Timeline Window will cause the animation window
     to repaint immediately."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: c58b4ee65782ad38338e29f7ee67787cb6998f04
   editorCompatibility:
     compatibilityLevel: 0
@@ -1650,11 +1650,11 @@ m_ResolvedPackages:
   name: com.unity.ugui
   displayName: Unity UI
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: "Unity UI is a set of tools for developing user interfaces for games
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
@@ -1695,7 +1695,7 @@ m_ResolvedPackages:
   - SDF
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1706,27 +1706,27 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 2.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 24b10291b18f65e937b22d041c48712033f29449
   editorCompatibility:
     compatibilityLevel: 0
@@ -1742,10 +1742,10 @@ m_ResolvedPackages:
   name: com.unity.visualscripting
   displayName: Visual Scripting
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: tool
   description: 'Visual scripting is a workflow that uses visual, node-based graphs
     to design behaviors rather than write lines of C# script.
@@ -1806,7 +1806,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1817,24 +1817,24 @@ m_ResolvedPackages:
     licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638659692270900000
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
     revision: 3621ef0207747a605f195118ba99d1a8bdb19433
-    path: 
+    path:
   unityLifecycle:
     version: 1.9.5
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Fixed\n- Fixed \"NullReferenceException\" error
     when returning to the State Graph from the Script Graph. [UVSB-1905](https://issuetracker.unity3d.com/product/unity/issues/guid/UVSB-1905)\n-
     Fixed compilation error when a graph contains a reference to a method with an
@@ -1843,7 +1843,7 @@ m_ResolvedPackages:
     Fixed an error when creating a Script Graph asset in an empty project\n\n###
     Changed\n- Updated deprecated EditorAnalytics APIs to new ones"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 1b53f46e931bea668e53f1feb0ac9138170c9455
   editorCompatibility:
     compatibilityLevel: 0
@@ -1859,10 +1859,10 @@ m_ResolvedPackages:
   name: com.unity.modules.accessibility
   displayName: Accessibility
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Accessibility module includes utilities to facilitate the development
     of accessible user experiences in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AccessibilityModule.html'
@@ -1879,7 +1879,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1890,32 +1890,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1926,10 +1926,10 @@ m_ResolvedPackages:
   name: com.unity.modules.ai
   displayName: AI
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
@@ -1946,7 +1946,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -1957,32 +1957,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -1993,10 +1993,10 @@ m_ResolvedPackages:
   name: com.unity.modules.androidjni
   displayName: Android JNI
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
   errors: []
@@ -2012,7 +2012,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2023,32 +2023,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2059,10 +2059,10 @@ m_ResolvedPackages:
   name: com.unity.modules.animation
   displayName: Animation
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
@@ -2079,7 +2079,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2090,32 +2090,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2126,10 +2126,10 @@ m_ResolvedPackages:
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
@@ -2146,7 +2146,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2157,32 +2157,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2193,10 +2193,10 @@ m_ResolvedPackages:
   name: com.unity.modules.audio
   displayName: Audio
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
@@ -2213,7 +2213,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2224,32 +2224,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2260,10 +2260,10 @@ m_ResolvedPackages:
   name: com.unity.modules.cloth
   displayName: Cloth
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
@@ -2284,7 +2284,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2295,32 +2295,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2331,10 +2331,10 @@ m_ResolvedPackages:
   name: com.unity.modules.director
   displayName: Director
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
@@ -2359,7 +2359,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2370,32 +2370,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2406,10 +2406,10 @@ m_ResolvedPackages:
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The ImageConversion module implements the ImageConversion class which
     provides helper methods for converting image data. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
@@ -2426,7 +2426,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2437,32 +2437,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2473,10 +2473,10 @@ m_ResolvedPackages:
   name: com.unity.modules.imgui
   displayName: IMGUI
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
@@ -2493,7 +2493,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2504,32 +2504,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2540,10 +2540,10 @@ m_ResolvedPackages:
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
@@ -2560,7 +2560,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2571,32 +2571,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2607,10 +2607,10 @@ m_ResolvedPackages:
   name: com.unity.modules.particlesystem
   displayName: Particle System
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
@@ -2627,7 +2627,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2638,32 +2638,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2674,10 +2674,10 @@ m_ResolvedPackages:
   name: com.unity.modules.physics
   displayName: Physics
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
@@ -2694,7 +2694,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2705,32 +2705,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2741,10 +2741,10 @@ m_ResolvedPackages:
   name: com.unity.modules.physics2d
   displayName: Physics 2D
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
@@ -2761,7 +2761,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2772,32 +2772,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2808,10 +2808,10 @@ m_ResolvedPackages:
   name: com.unity.modules.screencapture
   displayName: Screen Capture
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
@@ -2832,7 +2832,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2843,32 +2843,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2879,10 +2879,10 @@ m_ResolvedPackages:
   name: com.unity.modules.terrain
   displayName: Terrain
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
@@ -2899,7 +2899,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2910,32 +2910,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -2946,10 +2946,10 @@ m_ResolvedPackages:
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
@@ -2974,7 +2974,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -2985,32 +2985,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3021,10 +3021,10 @@ m_ResolvedPackages:
   name: com.unity.modules.tilemap
   displayName: Tilemap
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
   errors: []
@@ -3044,7 +3044,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3055,32 +3055,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3091,10 +3091,10 @@ m_ResolvedPackages:
   name: com.unity.modules.ui
   displayName: UI
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
@@ -3111,7 +3111,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3122,32 +3122,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3158,10 +3158,10 @@ m_ResolvedPackages:
   name: com.unity.modules.uielements
   displayName: UIElements
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
@@ -3194,7 +3194,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3205,32 +3205,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3241,10 +3241,10 @@ m_ResolvedPackages:
   name: com.unity.modules.umbra
   displayName: Umbra
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
@@ -3261,7 +3261,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3272,32 +3272,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3308,12 +3308,12 @@ m_ResolvedPackages:
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
-  description: 
+  description:
   errors: []
   versions:
     all:
@@ -3335,7 +3335,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3346,32 +3346,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3382,10 +3382,10 @@ m_ResolvedPackages:
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
@@ -3402,7 +3402,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3413,32 +3413,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3449,10 +3449,10 @@ m_ResolvedPackages:
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
@@ -3477,7 +3477,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3488,32 +3488,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3524,10 +3524,10 @@ m_ResolvedPackages:
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
@@ -3552,7 +3552,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3563,32 +3563,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3599,10 +3599,10 @@ m_ResolvedPackages:
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
@@ -3627,7 +3627,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3638,32 +3638,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3674,10 +3674,10 @@ m_ResolvedPackages:
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
@@ -3718,7 +3718,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3729,32 +3729,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3765,10 +3765,10 @@ m_ResolvedPackages:
   name: com.unity.modules.vehicles
   displayName: Vehicles
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
@@ -3789,7 +3789,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3800,32 +3800,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3836,10 +3836,10 @@ m_ResolvedPackages:
   name: com.unity.modules.video
   displayName: Video
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
@@ -3868,7 +3868,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3879,32 +3879,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3915,10 +3915,10 @@ m_ResolvedPackages:
   name: com.unity.modules.vr
   displayName: VR
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
@@ -3949,7 +3949,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -3960,32 +3960,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -3996,10 +3996,10 @@ m_ResolvedPackages:
   name: com.unity.modules.wind
   displayName: Wind
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
@@ -4016,7 +4016,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4027,32 +4027,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -4063,10 +4063,10 @@ m_ResolvedPackages:
   name: com.unity.modules.xr
   displayName: XR
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
@@ -4095,7 +4095,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4106,32 +4106,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -4142,10 +4142,10 @@ m_ResolvedPackages:
   name: com.unity.modules.subsystems
   displayName: Subsystems
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
@@ -4166,7 +4166,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4177,32 +4177,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
+    version:
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.modules.hierarchycore@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -4213,10 +4213,10 @@ m_ResolvedPackages:
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: module
   description: 'Module that contains a high-performance hierarchy container. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.HierarchyCoreModule.html'
@@ -4233,7 +4233,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4244,32 +4244,32 @@ m_ResolvedPackages:
     licensingModel: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 0
   repository:
-    type: 
-    url: 
-    revision: 
-    path: 
+    type:
+    url:
+    revision:
+    path:
   unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
+    version:
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
-  fingerprint: 
+    productId:
+  fingerprint:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 
+    minimumUnityVersion:
 - packageId: com.unity.ext.nunit@2.0.5
   testable: 0
   isDirectDependency: 0
@@ -4280,9 +4280,9 @@ m_ResolvedPackages:
   name: com.unity.ext.nunit
   displayName: Custom NUnit
   author:
-    name: 
-    email: 
-    url: 
+    name:
+    email:
+    url:
   category: Libraries
   type: assets
   description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
@@ -4312,7 +4312,7 @@ m_ResolvedPackages:
   - test
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4329,21 +4329,21 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
     revision: 469fe0d46bfc26fbb32a53885ca4d12abcdae4ae
-    path: 
+    path:
   unityLifecycle:
     version: 2.0.5
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"- Fixing bug for InstanceID as struct changes"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092
   editorCompatibility:
     compatibilityLevel: 0
@@ -4359,10 +4359,10 @@ m_ResolvedPackages:
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
@@ -4413,7 +4413,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4430,18 +4430,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
     revision: 700b44077345e97d37d464ff25507638983aed64
-    path: 
+    path:
   unityLifecycle:
     version: 2.0.22
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"Integration:\n\n- Add support for `XDG_DATA_DIRS` and
     `.desktop` files on Linux for `VS Code` discovery.\n- Use compile-time platform-specifics
     instead of using runtime conditions.\n\nProject generation:\n\n- Suppress `USG0001`
@@ -4449,7 +4449,7 @@ m_ResolvedPackages:
     output directory when building).\n- Add Unity capability to SDK-Style projects.\n-
     Prevent circular dependency errors with SDK-Style projects."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 8140e851d83e922ca2021b04a89519de94ebe38c
   editorCompatibility:
     compatibilityLevel: 0
@@ -4465,10 +4465,10 @@ m_ResolvedPackages:
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: asset
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
@@ -4495,7 +4495,7 @@ m_ResolvedPackages:
   - editor
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4506,27 +4506,27 @@ m_ResolvedPackages:
     licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
     revision: f67fc9992bbc7a553b17375de53a8b2db136528e
-    path: 
+    path:
   unityLifecycle:
     version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca
   editorCompatibility:
     compatibilityLevel: 0
@@ -4542,11 +4542,11 @@ m_ResolvedPackages:
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: "The Profile Analyzer tool supports the standard Unity Profiler. You
     can use it to analyze multiple frames and multiple data sets of the CPU data
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
@@ -4579,7 +4579,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4596,22 +4596,22 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
     revision: 835e61d94bd201d0dea5763dff75e86b6b61de29
-    path: 
+    path:
   unityLifecycle:
     version: 1.2.3
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Fixed\n\n* Fixed minimum supported version in documentation.\n*
     Fixed PROFB-199; Unchecking ''Hide Removed Markers'' doesn''t work."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: a68e7bc849973d943853204178d08a2bc7656ffe
   editorCompatibility:
     compatibilityLevel: 0
@@ -4627,10 +4627,10 @@ m_ResolvedPackages:
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: Use this package to export code coverage data and reports from your
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
@@ -4698,7 +4698,7 @@ m_ResolvedPackages:
   - opencover
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4715,18 +4715,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
     revision: 959db8ff97eedf9b211ad5cf320b87ac01f1e90f
-    path: 
+    path:
   unityLifecycle:
     version: 1.2.6
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Fixes\n- Documentation: Fixed formatting in [Using
     Code Coverage in batchmode](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/CoverageBatchmode.html)
     page (case [COV-40](https://issuetracker.unity3d.com/issues/docs-formatting-in-using-code-coverage-in-batchmode-docs-page-is-incorrect)).\n-
@@ -4734,7 +4734,7 @@ m_ResolvedPackages:
     sample project* (case [COV-42](https://issuetracker.unity3d.com/issues/sample-project-is-using-obsolete-findobjectoftype-method-which-causes-multiple-warnings-in-console-when-it-is-imported)).\n-
     Added missing logs for the ReportGenerator (case [COV-46](https://issuetracker.unity3d.com/issues/code-coverage-package-does-not-report-some-of-the-internal-reportgenerator-errors))."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 205a02cbcb39584f20b51c49b853047aceb3a3a7
   editorCompatibility:
     compatibilityLevel: 0
@@ -4750,10 +4750,10 @@ m_ResolvedPackages:
   name: com.unity.mathematics
   displayName: Mathematics
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: assets
   description: Unity's C# SIMD math library providing vector types and math functions
     with a shader like syntax.
@@ -4789,7 +4789,7 @@ m_ResolvedPackages:
   - unity
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4806,24 +4806,24 @@ m_ResolvedPackages:
     type: git
     url: https://github.com/Unity-Technologies/Unity.Mathematics.git
     revision: 1695a8503482a3131be78cc26308a93f82c05b04
-    path: 
+    path:
   unityLifecycle:
     version: 1.3.2
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Fixed\n* Fixed `math.hash` crash when using IL2CPP
     builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
     and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
     Updated minimum editor version to 2021.3"}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 8017b507cc74bf0a1dd14b18aa860569f807314d
   editorCompatibility:
     compatibilityLevel: 0
@@ -4839,10 +4839,10 @@ m_ResolvedPackages:
   name: com.unity.services.analytics
   displayName: Analytics
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: asset
   description: The Unity Analytics package automatically collects core events and
     user properties when someone uses your game or application, and enables you to
@@ -4911,7 +4911,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -4928,30 +4928,30 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
     revision: e54e6e452cff2d0d31e9b5530b2dbd8ffcf2f0e7
-    path: 
+    path:
   unityLifecycle:
     version: 6.0.1
-    nextVersion: 
+    nextVersion:
     recommendedVersion: 6.0.1
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Added\n\n* New Analytics Debug Panel accessible
     in the Unity Editor from Services -> Analytics -> Debug Panel\n  * Monitor the
     SDK''s activity while you play-test\n  * Observe events as they are recorded
     and uploaded\n  * ... and more!\n\n### Breaking Changes\n\n* The minimum supported
     editor version for the UGS Analytics SDK is now 2021.3\n* All methods, classes
-    and structs marked as `Obsolete` in earlier versions of the SDK have been removed\n 
+    and structs marked as `Obsolete` in earlier versions of the SDK have been removed\n
     * If you have trouble upgrading, move to 5.1.0 first, fix the deprecation warnings
     there, then move to 6.0.0","gameService":{"configurePath":"Project/Services/Analytics
     - Gaming Services","genericDashboardUrl":"https://dashboard.unity3d.com/analytics","projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/analytics/events","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"},"supportedPlatforms":["Android","iOS","Linux","Mac","PC","Windows
     8.1 Universal","Windows 10 Universal","WebGL"]}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: f7e249983920dd67eba8952b09e37a6fe4582dd0
   editorCompatibility:
     compatibilityLevel: 0
@@ -4967,10 +4967,10 @@ m_ResolvedPackages:
   name: com.unity.settings-manager
   displayName: Settings Manager
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
@@ -4994,7 +4994,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -5005,27 +5005,27 @@ m_ResolvedPackages:
     licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637744099390000000
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
     revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
-    path: 
+    path:
   unityLifecycle:
     version: 2.0.1
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
-  upmReserved: 
+    hash:
+    revision:
+  upmReserved:
   assetStore:
-    productId: 
+    productId:
   fingerprint: 56a930affa1e4462d3595b5c19a1c2a4bf2015d2
   editorCompatibility:
     compatibilityLevel: 0
@@ -5041,11 +5041,11 @@ m_ResolvedPackages:
   name: com.unity.services.core
   displayName: Services Core
   author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
+    name:
+    email:
+    url:
+  category:
+  type:
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -5106,7 +5106,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -5123,18 +5123,18 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
     revision: 64962022211031c9e26ceec024d3587ea8e05a17
-    path: 
+    path:
   unityLifecycle:
     version: 1.14.0
-    nextVersion: 
+    nextVersion:
     recommendedVersion: 1.14.0
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"### Added\n\n- Added `ServicesInitialization` monobehaviour
     to manage services in the scene authoring.\n- Added `ServicesBehaviour` abstract
     monobehaviour as a base for behaviours built on top of services.\n- Added unique
@@ -5143,7 +5143,7 @@ m_ResolvedPackages:
     `GetIdentifier()` method to `IUnityServices` interface with a default implementation.\n\n###
     Changed\n\n- Updated the minimum supported Editor version to 2021.3."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 9e81a5e382457b799480b311ce51187be99abbbf
   editorCompatibility:
     compatibilityLevel: 0
@@ -5159,10 +5159,10 @@ m_ResolvedPackages:
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
   author:
-    name: 
-    email: 
-    url: 
-  category: 
+    name:
+    email:
+    url:
+  category:
   type: library
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 13.0.2.
@@ -5202,7 +5202,7 @@ m_ResolvedPackages:
   keywords: []
   registry:
     id: main
-    name: 
+    name:
     url: https://packages.unity.com
     scopes: []
     isDefault: 1
@@ -5213,28 +5213,28 @@ m_ResolvedPackages:
     licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638186318800000000
-  documentationUrl: 
+  documentationUrl:
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
     revision: d8e49aef8979bef617144382052ec2f479645eaf
-    path: 
+    path:
   unityLifecycle:
     version: 3.2.1
-    nextVersion: 
-    recommendedVersion: 
+    nextVersion:
+    recommendedVersion:
     isDeprecated: 0
-    deprecationMessage: 
+    deprecationMessage:
   isDeprecated: 0
-  deprecationMessage: 
+  deprecationMessage:
   git:
-    hash: 
-    revision: 
+    hash:
+    revision:
   upmReserved: '{"changelog":"* Fixed Newtonsoft DLL when compiling with netstandard
     2.0."}'
   assetStore:
-    productId: 
+    productId:
   fingerprint: 74deb55db2a0c29ddfda576608bcb86abbd13ee6
   editorCompatibility:
     compatibilityLevel: 0

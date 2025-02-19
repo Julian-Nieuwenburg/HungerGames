@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pickup
+  - GasTank
+  - CinemachineTarget
+  - Target
+  - Concrete
+  - Metal
+  - ExplosiveBarrel
+  - Healthtest
   layers:
   - Default
   - TransparentFX

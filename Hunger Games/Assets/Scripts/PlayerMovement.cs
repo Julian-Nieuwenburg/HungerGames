@@ -66,13 +66,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(movement, ForceMode.VelocityChange);
         }
-
-        // Zorg ervoor dat we een natuurlijke valkracht hebben
-        if (!grounded)
-        {
-            // Toepassen van een zwaartekracht die sterker is
-            rb.AddForce(Physics.gravity * rb.mass, ForceMode.Acceleration);
-        }
     }
 
     bool CheckIfGrounded()

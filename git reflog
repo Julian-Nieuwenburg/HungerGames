@@ -1,0 +1,130 @@
+[33mcommit 6175c0967b087a1676f21fdc2d7719e3e6d78065[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Tue Feb 25 16:54:18 2025 +0100
+
+    inventory en meer wapens
+
+[33mcommit e154af5579a42491fc41ae2bd62dbcbcb1811f9f[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Tue Feb 25 11:33:12 2025 +0100
+
+    inventory
+
+[33mcommit 5547fd7667dff9ec1625438829b895a41d5da64f[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Mon Feb 24 21:59:22 2025 +0100
+
+    map
+    
+    en ja was dus drie uur bezig met die inventory mr t lukt me echt niet hinderlijkkk
+
+[33mcommit c8e7af4aaf28b6064561af6a03467d1c30bee1af[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Sat Feb 22 19:08:50 2025 +0100
+
+    sprite, vliegtuig
+
+[33mcommit 758e26f7fda9c75392b11a1f3fef845c07e66047[m
+Author: Julian Nieuwenburg <111181@st-maartenscollege.nl>
+Date:   Fri Feb 21 14:02:17 2025 +0100
+
+    Map kleiner
+
+[33mcommit 5bac867ce7d640bce30f0dbad0720028b1da45f0[m
+Author: JensvanHooft <111208@st-maartenscollege.nl>
+Date:   Thu Feb 20 15:41:20 2025 +0100
+
+    Map afgemaakt
+    
+    Border toegevoegd. Errors er uit gefilterd
+
+[33mcommit 7d7752c503e2d87c891f3ee2be89360ff7e3edcf[m
+Author: JensvanHooft <111208@st-maartenscollege.nl>
+Date:   Thu Feb 20 13:08:15 2025 +0100
+
+    terrain
+    
+    terrain toegevoegd
+
+[33mcommit 10eec909aad57370fd07e399d3722a4dc73ef311[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Wed Feb 19 10:29:58 2025 +0100
+
+    Update ArtifactDB
+
+[33mcommit 46d6ef0cac7b6b4d5c205ce016057a0d2542991f[m
+Merge: 234f45b8 47e63b62
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Wed Feb 19 10:28:39 2025 +0100
+
+    Merge branch 'main' of https://github.com/Julian-Nieuwenburg/HungerGames
+
+[33mcommit 234f45b80d56a0191250476ac6ce86cbc905bffe[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Wed Feb 19 10:05:37 2025 +0100
+
+    Inventorybar
+
+[33mcommit 47e63b6208e1c89cf3a3eae1702ef67d0bb304b2[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Wed Feb 19 10:04:43 2025 +0100
+
+    Verder aan healthbar
+
+[33mcommit 49f21274d60f03283591cff505ff3228fb0fc5a9[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Tue Feb 18 23:02:51 2025 +0100
+
+    Healthbar
+
+[33mcommit 2263cb86fc6076f1ff4e8a071aba2bf60d5a48b8[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Mon Feb 17 22:12:27 2025 +0100
+
+    Update .DS_Store
+
+[33mcommit 7df305fdf4460042f1e47320993a13deae2e4840[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Mon Feb 17 22:11:42 2025 +0100
+
+    man + inventory
+    
+    je kan nu de bow collecten mr dan verwijnt het ofzo en ik kan dus ook niet testen of je kan schieten mr moest in principe kunnen maarja weet niet hoe goed mn code is
+
+[33mcommit fe91f4a673da308193bd872b80c55b18e6fe4f4d[m
+Author: Karlijnvh <112547700+Karlijnvh@users.noreply.github.com>
+Date:   Fri Feb 14 11:58:44 2025 +0100
+
+    Proberen pijl en boog
+    
+    kreeg steeds connection error
+
+[33mcommit 1cdeec606e3f154e843a8111898144a1f3f7564e[m
+Author: Julian-Nieuwenburg <111181@st-maartenscollege.nl>
+Date:   Fri Feb 7 14:35:04 2025 +0100
+
+    camera
+
+[33mcommit 0f9060f4952a4221071845d91160605484301498[m
+Author: Julian-Nieuwenburg <111181@st-maartenscollege.nl>
+Date:   Fri Feb 7 14:28:50 2025 +0100
+
+    sprint
+
+[33mcommit a5a72e38c41538781acfcf464e66812881a297b0[m
+Author: Julian-Nieuwenburg <111181@st-maartenscollege.nl>
+Date:   Fri Feb 7 14:15:01 2025 +0100
+
+    Camera verbeterd
+
+[33mcommit 0ca37d1b2288bbaade8e03b19b4d1f3c27821d38[m
+Author: Julian Nieuwenburg <111181@st-maartenscollege.nl>
+Date:   Thu Feb 6 22:21:49 2025 +0100
+
+    Video 1
+
+[33mcommit 150eb9508055c22dfe4890d75f8ae5c702887fc3[m
+Author: Julian-Nieuwenburg <127728022+Julian-Nieuwenburg@users.noreply.github.com>
+Date:   Thu Feb 6 21:54:38 2025 +0100
+
+    Initial commit

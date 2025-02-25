@@ -8,7 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 14f;
     public float maxVelocityChange = 10f;
     [Space]
-    public float jumpHeight = 5f;
+    public float jumpForce = 7f;
+    public Transform groundCheck;
+    public LayerMask groundMask;
+    [Space]
+    public Camera playerCamera;
 
     private Vector2 input;
     private Rigidbody rb;
@@ -18,39 +22,43 @@ public class PlayerMovement : MonoBehaviour
     private bool jumping;
     private bool grounded = false;
 
+    private float defaultHeadPosition;
+
+    // Toegevoegde variabelen voor het controleren van hellingen
+    public float slopeLimit = 45f; // Maximaal toegestaan hellingshoek voor springen
+    public float groundRayDistance = 1.1f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+
+        rb.freezeRotation = true;
     }
 
     void Update()
     {
-        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        input.Normalize();
+        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         sprinting = Input.GetButton("Sprint");
-        if (grounded)
-        {
-            jumping = Input.GetButtonDown("Jump");
-        }
+        jumping = Input.GetButtonDown("Jump") && grounded;
 
-        // Update animator parameters
         bool isMoving = input.magnitude > 0;
-        animator.SetBool("isWalking", isMoving && !sprinting && !jumping);
-        animator.SetBool("isSprinting", isMoving && sprinting && !jumping);
-        animator.SetBool("isJumping", jumping);
-        animator.SetBool("isIdle", !isMoving && !sprinting && !jumping && grounded);
-        animator.SetBool("isFalling", !grounded && !jumping);
+        animator.SetBool("isWalking", isMoving && !sprinting && grounded);
+        animator.SetBool("isSprinting", isMoving && sprinting && grounded);
+        animator.SetBool("isJumping", !grounded);
+        animator.SetBool("isIdle", !isMoving && grounded);
     }
 
     private void FixedUpdate()
     {
-        if (grounded && jumping)
+        // Gebruik een Raycast om de grond te controleren
+        grounded = CheckIfGrounded();
+
+        if (jumping && grounded)
         {
-            rb.AddForce(Vector3.up * Mathf.Sqrt(2 * jumpHeight * Physics.gravity.magnitude), ForceMode.VelocityChange);
-            grounded = false;
-            jumping = false;
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z); // Reset de y-velocity voor een nette sprong
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
         Vector3 movement = CalculateMovement(sprinting ? sprintSpeed : walkSpeed);
@@ -58,44 +66,40 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(movement, ForceMode.VelocityChange);
         }
+
+        // Zorg ervoor dat we een natuurlijke valkracht hebben
+        if (!grounded)
+        {
+            // Toepassen van een zwaartekracht die sterker is
+            rb.AddForce(Physics.gravity * rb.mass, ForceMode.Acceleration);
+        }
+    }
+
+    bool CheckIfGrounded()
+    {
+        RaycastHit hit;
+        // Gebruik een raycast die iets verder onder de speler kijkt (groundRayDistance) om te zien of er grond is
+        if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundRayDistance, groundMask))
+        {
+            // Controleer of de normaal van de grond niet steiler is dan de slopeLimit
+            float angle = Vector3.Angle(hit.normal, Vector3.up);
+            return angle <= slopeLimit;
+        }
+        return false;
     }
 
     Vector3 CalculateMovement(float speed)
     {
         Vector3 targetVelocity = new Vector3(input.x, 0, input.y);
-        targetVelocity = transform.TransformDirection(targetVelocity);
-        targetVelocity *= speed;
+        targetVelocity = transform.TransformDirection(targetVelocity) * speed;
 
-        Vector3 velocity = rb.linearVelocity;
+        Vector3 velocity = rb.linearVelocity;  // Gebruik linearVelocity hier
+        Vector3 velocityChange = targetVelocity - velocity;
 
-        if (input.magnitude > 0.5f)
-        {
-            Vector3 velocityChange = targetVelocity - velocity;
-            velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
-            velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
-            velocityChange.y = 0;
+        velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
+        velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
+        velocityChange.y = 0;
 
-            return velocityChange;
-        }
-        else
-        {
-            return Vector3.zero;
-        }
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            if (contact.normal.y > 0.5f)
-            {
-                grounded = true;
-            }
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        grounded = false;
+        return velocityChange;
     }
 }

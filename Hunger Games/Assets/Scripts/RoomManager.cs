@@ -10,6 +10,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
     [Space]
     public Transform spawnPoint;
 
+    [Space]
+    public GameObject roomCam;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
+
+        roomCam.SetActive(false );
 
         GameObject _player = PhotonNetwork.Instantiate(this.player.name, spawnPoint.position, Quaternion.identity);
         _player.GetComponent<PlayerSetup>().IsLocalPlayer();

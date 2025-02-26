@@ -26,7 +26,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         private Animator animator;
         private float chargeTime = 0.0f;
-        private Transform playerCamera;
+        private Transform MainCamera;
 
         #endregion
 
@@ -38,7 +38,7 @@ namespace InfimaGames.LowPolyShooterPack
 
             var gameModeService = ServiceLocator.Current.Get<IGameModeService>();
             var characterBehaviour = gameModeService.GetPlayerCharacter();
-            playerCamera = characterBehaviour.GetCameraWorld().transform;
+            MainCamera = characterBehaviour.GetCameraWorld().transform;
         }
 
         protected override void Update()
@@ -66,7 +66,7 @@ namespace InfimaGames.LowPolyShooterPack
             AudioSource.PlayClipAtPoint(audioClipShoot, transform.position);
 
             float finalSpeed = Mathf.Lerp(minArrowSpeed, maxArrowSpeed, chargeTime / maxChargeTime);
-            Quaternion rotation = Quaternion.LookRotation(playerCamera.forward * 1000.0f);
+            Quaternion rotation = Quaternion.LookRotation(MainCamera.forward * 1000.0f);
 
             GameObject projectile = Instantiate(prefabProjectile, transform.position, rotation);
             Rigidbody rb = projectile.GetComponent<Rigidbody>();

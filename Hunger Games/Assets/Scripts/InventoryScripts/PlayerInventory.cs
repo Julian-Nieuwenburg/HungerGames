@@ -188,6 +188,7 @@ public class PlayerInventory : MonoBehaviour
         maul_item.SetActive(false);
 
         animationIsPlaying = false;
+        
         GameObject selectedItemGameobject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameobject.SetActive(true);
     }

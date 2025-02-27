@@ -1055,7 +1055,7 @@ MonoBehaviour:
   walkSpeed: 4
   sprintSpeed: 14
   gravity: -9.81
-  jumpHeight: 10
+  jumpHeight: 4
   groundCheck: {fileID: 3701433554277327035}
   groundDistance: 0.1
   groundMask:

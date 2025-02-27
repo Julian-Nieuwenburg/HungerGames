@@ -853,9 +853,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.3054491
-  m_Height: 1.8450254
+  m_Height: 1.9112444
   m_Direction: 1
-  m_Center: {x: -0.01522544, y: 0.8440936, z: 0.01978451}
+  m_Center: {x: -0.01522544, y: 0.81098413, z: 0.01978451}
 --- !u!54 &8031622689340590519
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1024,7 +1024,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1000782619448103256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1656,10 +1656,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c84a983eb76347559e000951a7805a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryList: 00000000
+  inventoryList: 000000000100000002000000030000000400000005000000
   playerReach: 5
   cam: {fileID: 1519545858702545565}
-  pressToPickup_gameobject: {fileID: 0}
+  pressToPickup_gameobject: {fileID: 7456827329700179867, guid: 557d7aeee4a9749f283c7971a54dcc95, type: 3}
   inventorySlotImage:
   - {fileID: 2276396368317465931}
   - {fileID: 7682364614344894243}
@@ -1679,7 +1679,6 @@ MonoBehaviour:
   throwItemKey: 101
   pickUpItemKey: 113
   selectedItem: 0
-  animationIsPlaying: 1
   bow_item: {fileID: 7013697886023270358}
   sword_item: {fileID: 3700869751941578729}
   hammer_item: {fileID: 7226576601838516193}
@@ -1760,7 +1759,6 @@ MonoBehaviour:
   throwItemKey: 113
   pickUpItemKey: 101
   selectedItem: 0
-  animationIsPlaying: 1
   bow_item: {fileID: 7013697886023270358}
   sword_item: {fileID: 3700869751941578729}
   hammer_item: {fileID: 7226576601838516193}
@@ -1804,11 +1802,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2658588343096951138, guid: cb9adb6b9de6fbf4b916698190a36f26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.335
+      value: 0.291
       objectReference: {fileID: 0}
     - target: {fileID: 2658588343096951138, guid: cb9adb6b9de6fbf4b916698190a36f26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5909996
+      value: 1.739
       objectReference: {fileID: 0}
     - target: {fileID: 2658588343096951138, guid: cb9adb6b9de6fbf4b916698190a36f26, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1956,7 +1954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8195470288506880084, guid: f007e675f2d5c924d934064a480b831d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.298
+      value: 0.285
       objectReference: {fileID: 0}
     - target: {fileID: 8195470288506880084, guid: f007e675f2d5c924d934064a480b831d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2052,11 +2050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8365580251225016899, guid: 4cf2be40f891bef49981657081a7f02f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3113
+      value: 0.267
       objectReference: {fileID: 0}
     - target: {fileID: 8365580251225016899, guid: 4cf2be40f891bef49981657081a7f02f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1760006
+      value: 1.252
       objectReference: {fileID: 0}
     - target: {fileID: 8365580251225016899, guid: 4cf2be40f891bef49981657081a7f02f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2148,7 +2146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6285160486150532612, guid: 32c4281bda6b22d40a3ac8cf77192c29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.337
+      value: 0.288
       objectReference: {fileID: 0}
     - target: {fileID: 6285160486150532612, guid: 32c4281bda6b22d40a3ac8cf77192c29, type: 3}
       propertyPath: m_LocalPosition.y

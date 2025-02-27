@@ -17,7 +17,7 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] KeyCode pickUpItemKey;
 
     public int selectedItem = 0;
-    public bool animationIsPlaying = false;
+
 
     [Space(10)]
 
@@ -70,16 +70,9 @@ public class PlayerInventory : MonoBehaviour
         string stateName = stateInfo.shortNameHash.ToString();
         string idleStateHash = Animator.StringToHash("Idle").ToString();
 
-        if (stateName == idleStateHash)
-        {
-            animationIsPlaying = false;
-        }
-        else
-        {
-            animationIsPlaying = true;
-        }
+       
 
-        if (Input.GetKeyDown(throwItemKey) && inventoryList.Count > 1 && !animationIsPlaying)
+        if (Input.GetKeyDown(throwItemKey) && inventoryList.Count > 1)
         {
             Instantiate(itemInstantiate[inventoryList[selectedItem]], position: throwObject_gameobject.transform.position, new Quaternion());
             inventoryList.RemoveAt(selectedItem);
@@ -91,7 +84,7 @@ public class PlayerInventory : MonoBehaviour
             NewItemSelected();
         }
 
-        if (Input.GetButton("Fire1") && !animationIsPlaying)
+        if (Input.GetButton("Fire1"))
         {
             itemSetActive[inventoryList[selectedItem]].GetComponent<Animator>().Play("Attack");
         }
@@ -144,32 +137,32 @@ public class PlayerInventory : MonoBehaviour
             pressToPickup_gameobject.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) && inventoryList.Count > 0 && !animationIsPlaying)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && inventoryList.Count > 0 )
         {
             selectedItem = 0;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1 && !animationIsPlaying)
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1)
         {
             selectedItem = 1;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && inventoryList.Count > 2 && !animationIsPlaying)
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && inventoryList.Count > 2)
         {
             selectedItem = 2;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4) && inventoryList.Count > 3 && !animationIsPlaying)
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && inventoryList.Count > 3)
         {
             selectedItem = 3;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha5) && inventoryList.Count > 4 && !animationIsPlaying)
+        else if (Input.GetKeyDown(KeyCode.Alpha5) && inventoryList.Count > 4)
         {
             selectedItem = 4;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha6) && inventoryList.Count > 5 && !animationIsPlaying)
+        else if (Input.GetKeyDown(KeyCode.Alpha6) && inventoryList.Count > 5)
         {
             selectedItem = 5;
             NewItemSelected();
@@ -187,11 +180,13 @@ public class PlayerInventory : MonoBehaviour
         axe_item.SetActive(false);
         maul_item.SetActive(false);
 
-        animationIsPlaying = false;
         
         GameObject selectedItemGameobject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameobject.SetActive(true);
     }
+
+  
+
 }
 
 public interface IPickable

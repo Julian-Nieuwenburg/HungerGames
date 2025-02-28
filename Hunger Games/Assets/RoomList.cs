@@ -10,11 +10,28 @@ using TMPro;
 public class RoomList : MonoBehaviourPunCallbacks
 {
 
+    public static RoomList Instance;
+
+    public GameObject roomManagerGameObject;
+    public RoomManager roomManager;
+
     [Header("UI")]
     public Transform roomListParent;
     public GameObject roomListItemPrefab;
 
     private List<RoomInfo> cashedRoomList = new List<RoomInfo>();
+
+
+    public void ChangeRoomToCreateName(string _roomName)
+    {
+        roomManager.roomNameToJoin = _roomName;
+    }
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     IEnumerator Start()
     {
@@ -85,6 +102,14 @@ public class RoomList : MonoBehaviourPunCallbacks
 
             roomItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = room.Name;
             roomItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = room.PlayerCount + "/12";
+
+            roomItem.GetComponent<RoomItemButton>().Roomname = room.Name;
         }
+    }
+
+    public void JoinRoomByName(string name)
+    {
+        roomManager.roomNameToJoin = name;
+        roomManagerGameObject.SetActive(true);
     }
 }

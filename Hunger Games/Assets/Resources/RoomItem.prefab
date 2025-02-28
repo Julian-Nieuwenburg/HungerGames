@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 8240534878073153738}
   - component: {fileID: 4866893111831786898}
   - component: {fileID: 4818041498912865694}
+  - component: {fileID: 1696184407684406935}
   m_Layer: 5
   m_Name: RoomItem
   m_TagString: Untagged
@@ -393,4 +394,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4866893111831786898}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1696184407684406935}
+        m_TargetAssemblyTypeName: RoomItemButton, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1696184407684406935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8428554277661300902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebeb4d6095e0b2a4b8065f10112281b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Roomname: 

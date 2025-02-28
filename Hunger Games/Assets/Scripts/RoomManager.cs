@@ -13,24 +13,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
     [Space]
     public GameObject roomCam;
 
-    void Start()
-    {
-        Debug.Log("Connecting...");
-        PhotonNetwork.ConnectUsingSettings();
-    }
+    public string roomNameToJoin = "test";
 
-    public override void OnConnectedToMaster()
-    {
-        base.OnConnectedToMaster();
-        Debug.Log("Connected");
-        PhotonNetwork.JoinLobby();
-    }
 
-    public override void OnJoinedLobby()
+    public void JoinRoomButtonPressed()
     {
-        base.OnJoinedLobby();
-        PhotonNetwork.JoinOrCreateRoom("test", null, null);
-        Debug.Log("We zitten nu in een room");
+        PhotonNetwork.JoinOrCreateRoom(roomNameToJoin, null, null);
     }
 
     public override void OnJoinedRoom()

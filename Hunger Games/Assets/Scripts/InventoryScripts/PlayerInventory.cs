@@ -103,6 +103,8 @@ public class PlayerInventory : MonoBehaviour
             a++;
         }
 
+            // Bestaande logica hier...
+
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
 
@@ -111,9 +113,19 @@ public class PlayerInventory : MonoBehaviour
             IPickable item = hitInfo.collider.GetComponent<IPickable>();
             if (item != null)
             {
-                pressToPickup_gameobject.SetActive(true);
-                inventoryList.Add(hitInfo.collider.GetComponent<WeaponPickable>().weaponScriprableObject.item_type);
-                item.PickItem();
+            // Controleer of de inventory vol is
+                if (inventoryList.Count < 6)
+                {
+                    pressToPickup_gameobject.SetActive(true);
+                    inventoryList.Add(hitInfo.collider.GetComponent<WeaponPickable>().weaponScriprableObject.item_type);
+                    item.PickItem();
+                }
+                else
+                {
+                    pressToPickup_gameobject.SetActive(true);
+                    // Pas de UI aan om aan te geven dat de inventory vol is
+                    pressToPickup_gameobject.GetComponentInChildren<Text>().text = "Inventory Full - Throw an item to pick up";
+                }
             }
             else
             {
@@ -171,9 +183,8 @@ public class PlayerInventory : MonoBehaviour
         
         GameObject selectedItemGameobject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameobject.SetActive(true);
-    }
-
-  
+    
+    }  
 
 }
 

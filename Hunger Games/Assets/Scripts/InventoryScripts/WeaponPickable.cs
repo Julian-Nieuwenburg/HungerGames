@@ -8,6 +8,7 @@ public class WeaponPickable : MonoBehaviour, IPickable
     
     public void PickItem()
     {
+        Debug.Log("PickItem called: Picking up " + weaponScriprableObject.name);
         Destroy(gameObject);
     }
 }

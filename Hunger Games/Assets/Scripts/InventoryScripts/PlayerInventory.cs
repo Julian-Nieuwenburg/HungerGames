@@ -63,15 +63,7 @@ public class PlayerInventory : MonoBehaviour
     }
 
     void Update()
-    {
-        Animator animator = itemSetActive[inventoryList[selectedItem]].GetComponent<Animator>();
-        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-
-        string stateName = stateInfo.shortNameHash.ToString();
-        string idleStateHash = Animator.StringToHash("Idle").ToString();
-
-       
-
+    {   
         if (Input.GetKeyDown(throwItemKey) && inventoryList.Count > 1)
         {
             Instantiate(itemInstantiate[inventoryList[selectedItem]], position: throwObject_gameobject.transform.position, new Quaternion());
@@ -84,10 +76,6 @@ public class PlayerInventory : MonoBehaviour
             NewItemSelected();
         }
 
-        if (Input.GetButton("Fire1"))
-        {
-            itemSetActive[inventoryList[selectedItem]].GetComponent<Animator>().Play("Attack");
-        }
 
         for (int i = 0; i < 6; i++)
         {

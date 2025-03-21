@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 3079838090045038761}
   - component: {fileID: 1537927045916285235}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: HealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -813,10 +813,10 @@ RectTransform:
   - {fileID: 5646234035332972087}
   m_Father: {fileID: 2717390762609486456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 284, y: 173}
-  m_SizeDelta: {x: 51.2034, y: 8.6031}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -110, y: -48}
+  m_SizeDelta: {x: 51.2034, y: 8.603104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917494623426479345
 MonoBehaviour:
@@ -2209,7 +2209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7270501583233994522, guid: ee890c2bad02eb24992202c420217a7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.044
       objectReference: {fileID: 0}
     - target: {fileID: 7270501583233994522, guid: ee890c2bad02eb24992202c420217a7a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2331,7 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c84a983eb76347559e000951a7805a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryList: 00000000
+  inventoryList: 
   playerReach: 8
   cam: {fileID: 1519545858702545565}
   pressToPickup_gameobject: {fileID: 7456827329700179867, guid: 557d7aeee4a9749f283c7971a54dcc95, type: 3}
@@ -2351,7 +2351,7 @@ MonoBehaviour:
   throwObject_gameobject: {fileID: 6000370125669297245}
   throwItemKey: 101
   pickUpItemKey: 113
-  selectedItem: 0
+  selectedItem: 7
   bow_item: {fileID: 7013697886023270358}
   sword_item: {fileID: 3700869751941578729}
   hammer_item: {fileID: 7226576601838516193}

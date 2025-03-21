@@ -64,20 +64,30 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {   
-        if (Input.GetKeyDown(throwItemKey) && inventoryList.Count > 1)
+        if (Input.GetKeyDown(throwItemKey) && inventoryList.Count > 0)
         {
-            Instantiate(itemInstantiate[inventoryList[selectedItem]], position: throwObject_gameobject.transform.position, new Quaternion());
+            // Bereken spawnpositie: iets voor en boven de camera
+            Vector3 spawnPos = cam.transform.position + cam.transform.forward * 1.5f + Vector3.up * 0.3f;
+
+            // Instantiate het object met rotatie in kijkrichting
+            GameObject thrownItem = Instantiate(itemInstantiate[inventoryList[selectedItem]], spawnPos, cam.transform.rotation);
+
+            // Verwijder het item uit de inventory
             inventoryList.RemoveAt(selectedItem);
 
-            if (selectedItem != 0)
+            // Pas geselecteerde index aan
+            if (selectedItem >= inventoryList.Count && selectedItem > 0)
             {
                 selectedItem -= 1;
             }
+
+            // Update UI en active weapon
             NewItemSelected();
-        }
+}
 
 
-        for (int i = 0; i < 6; i++)
+
+        for (int i = 0; i < 5; i++)
         {
             if (i < inventoryList.Count)
             {
@@ -117,8 +127,17 @@ public class PlayerInventory : MonoBehaviour
                 if (inventoryList.Count < 6)
                 {
                     pressToPickup_gameobject.SetActive(true);
-                    inventoryList.Add(hitInfo.collider.GetComponent<WeaponPickable>().weaponScriprableObject.item_type);
+    
+                    // Eerst info ophalen
+                    itemType pickedType = hitInfo.collider.GetComponent<WeaponPickable>().weaponScriprableObject.item_type;
+
+                    // Dan pas picken (en dus mogelijk vernietigen)
                     item.PickItem();
+
+                    // Daarna pas toevoegen aan lijst
+                    inventoryList.Add(pickedType);
+                    
+                    NewItemSelected(); // Vergeet niet te refreshen na toevoegen
                 }
                 else
                 {
@@ -180,7 +199,11 @@ public class PlayerInventory : MonoBehaviour
         axe_item.SetActive(false);
         maul_item.SetActive(false);
 
-        
+        if (inventoryList.Count == 0)
+        {
+            return;
+        }
+
         GameObject selectedItemGameobject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameobject.SetActive(true);
     

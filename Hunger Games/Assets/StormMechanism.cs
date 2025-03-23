@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class StormMechanism : MonoBehaviour
 {
+    public static StormMechanism Instance { get; private set; } // Singleton instance
+
     public GameObject outerSphere; // De originele Sphere (buiten zichtbaar)
     public GameObject innerSphere; // De duplicaat met omgekeerde normals (binnen zichtbaar)
 
@@ -13,7 +15,22 @@ public class StormMechanism : MonoBehaviour
     public float waitTime = 60f; // Tijd tussen elke krimp (in seconden)
 
     private float currentRadius;
+    public float CurrentRadius => currentRadius; // Public property to expose currentRadius
+
     private int currentPhase = 0;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Optional: Keep this object across scenes
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {

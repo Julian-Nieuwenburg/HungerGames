@@ -24,7 +24,7 @@ public class RoomList : MonoBehaviourPunCallbacks
 
     public void ChangeRoomToCreateName(string _roomName)
     {
-        roomManager.roomNameToJoin = _roomName;
+        roomManager.roomName = _roomName;
     }
 
 
@@ -109,7 +109,7 @@ public class RoomList : MonoBehaviourPunCallbacks
 
     public void JoinRoomByName(string name)
     {
-        roomManager.roomNameToJoin = name;
+        roomManager.roomName = name;
         roomManagerGameObject.SetActive(true);
     }
 }

@@ -2,54 +2,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
-    public GameObject player;
-    [Space]
-    public Transform[] spawnPoints;
-    private List<int> availableSpawnIndices = new List<int>();
+    public GameObject playerPrefab;
 
-    [Space]
-    public GameObject roomCam;
+    public string roomName { get; internal set; }
 
-    public string roomNameToJoin = "test";
-
+    private void Start()
+    {
+        if (!PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
+    }
 
     public void JoinRoomButtonPressed()
     {
-        PhotonNetwork.JoinOrCreateRoom(roomNameToJoin, null, null);
+        if (PhotonNetwork.IsConnectedAndReady)
+        {
+            PhotonNetwork.JoinOrCreateRoom("RoomName", new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+        }
+        else
+        {
+            Debug.LogError("PhotonNetwork is not connected and ready.");
+        }
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Connected to Master Server.");
+        // Now you can join or create a room
+        JoinRoomButtonPressed();
     }
 
     public override void OnJoinedRoom()
     {
-        base.OnJoinedRoom();
-        roomCam.SetActive(false);
-
-        // Vul de lijst met alle beschikbare spawn indices
-        if (PhotonNetwork.IsMasterClient)
-        {
-            for (int i = 0; i < spawnPoints.Length; i++)
-            {
-                availableSpawnIndices.Add(i);
-            }
-        }
-
-        StartCoroutine(SpawnPlayer());
+        Debug.Log("Joined room successfully.");
+        SpawnPlayer();
     }
 
-    IEnumerator SpawnPlayer()
+    private void SpawnPlayer()
     {
-        while (availableSpawnIndices.Count == 0)
+        Vector3 spawnPosition = new Vector3(0, 0, 0); // Set your spawn position
+        Quaternion spawnRotation = Quaternion.identity; // Set your spawn rotation
+
+        if (playerPrefab != null)
         {
-            yield return null;
+            PhotonNetwork.Instantiate(playerPrefab.name, spawnPosition, spawnRotation);
         }
-
-        int randomIndex = availableSpawnIndices[Random.Range(0, availableSpawnIndices.Count)];
-        availableSpawnIndices.Remove(randomIndex);
-
-        Vector3 spawnPosition = spawnPoints[randomIndex].position;
-        GameObject _player = PhotonNetwork.Instantiate(this.player.name, spawnPosition, Quaternion.identity);
-        _player.GetComponent<PlayerSetup>().IsLocalPlayer();
+        else
+        {
+            Debug.LogError("Player prefab is not set in the RoomManager.");
+        }
     }
 }
